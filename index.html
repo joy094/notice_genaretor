@@ -90,11 +90,14 @@
       }
       .form input {
         width: 100%;
-        padding: 6px;
+        padding: 10px; /* vertical padding বাড়ালাম */
         font-size: 16px;
-        font-family: "SutonnyMJ";
-        height: 36px;
+        font-family: "SutonnyMJ", sans-serif;
+        height: auto; /* flexible height */
+        box-sizing: border-box; /* padding include হবে height-এ */
+        line-height: 1.4; /* লেখার vertical spacing ঠিক রাখবে */
       }
+
       .form button {
         margin-top: 12px;
         padding: 10px 16px;
@@ -108,13 +111,13 @@
         width: 100%;
       }
 
-      /* Mobile responsive input */
       @media (max-width: 480px) {
-        .form input {
-          font-size: 14px;
-          padding: 8px 6px;
-        }
-      }
+  .form input {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
     </style>
   </head>
   <body>
